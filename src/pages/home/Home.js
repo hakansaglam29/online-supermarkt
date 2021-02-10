@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { HeaderContext } from "../../App";
+import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
 import Slider from '../../components/slider/slider'
 import Specificications from '../../components/specifications/specifications.component';
 import Products from '../../components/collection-overview/collection.component';
@@ -9,7 +9,7 @@ import './Home.scss'
 
 export default function Home() {
     const { width } = useWindowDimensions();
-    const { sidebar } = useContext(HeaderContext);
+    const { sidebar } = useContext(SidebarContext);
 
     return (
         <div

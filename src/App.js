@@ -1,5 +1,4 @@
 import './App.scss';
-import React, { useState, createContext } from 'react';
 import Navbar from './components/header/header.component';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
@@ -16,19 +15,11 @@ import Elektronik from './pages/Elektronik';
 import Kampanyalar from './pages/Kampanyalar';
 import Migroskop from './pages/Migroskop';
 import CollectionOverview from './components/collection-overview/collection.component';
-import useWindowDimensions from './components/window-dimensions/window-dimensions.component';
-
-export const HeaderContext  = createContext();
+import SidebarProvider from './providers/sidebar/sidebar.provider';
 
 function App() {
-  const { width } = useWindowDimensions();
-  const [sidebar, setSidebar] = useState((width<1025) ? false : true)
-
-  const showSidebar = () => {
-      setSidebar(!sidebar)
-  }
   return (
-    <HeaderContext.Provider value={{sidebar, showSidebar}}>
+    <SidebarProvider>
       <Router>
         <Navbar />
         <Switch>
@@ -48,7 +39,7 @@ function App() {
           <Route path='/products/hakanskop' component={Migroskop}/>
         </Switch>
       </Router>
-    </HeaderContext.Provider>
+    </SidebarProvider>
   );
 }
 

@@ -5,7 +5,8 @@ import './collection.styles.scss';
 import CollectionPreview from '../collection-preview/collection-preview.component';
 
 const CollectionsOverview = () => {
-  const collections = useContext(CollectionsContext);
+  const collectionsMap = useContext(CollectionsContext);
+  const collections = Object.keys(collectionsMap).map(key => collectionsMap[key])
   
   return (
     <div className='collection-container'>

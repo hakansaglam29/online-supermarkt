@@ -1,11 +1,11 @@
 import { useContext } from 'react';
-import { HeaderContext } from "../../App";
+import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
 import { DirectoryContext } from '../../contexts/directory/directory.context';
 import './sidebar-directory.styles.scss';
 import SidebarItem from '../sidebar-item/sidebar-item.component';
 
 const SidebarDirectory = () => {
-    const { sidebar } = useContext(HeaderContext);
+    const { sidebar } = useContext(SidebarContext);
     const { sections } = useContext(DirectoryContext);
     
 

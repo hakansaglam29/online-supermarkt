@@ -1,8 +1,8 @@
-export const PRODUCT_DATA = [
-  {
+export const PRODUCT_DATA = {
+  fruits_vegetables:{
     id: 1,
     title: 'Fruits and Vegetables',
-    routeName: 'fruits-vegetables',
+    routeName: 'fruits_vegetables',
     items: [
       {
         id: 1,
@@ -76,10 +76,10 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  meat_chicken_fish: {
     id: 2,
     title: 'Meat, Chicken and Fish',
-    routeName: 'meat-chicken-fish',
+    routeName: 'meat_chicken_fish',
     items: [
       {
         id: 11,
@@ -174,10 +174,10 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  milk_breakfast:{
     id: 3,
     title: 'Milk and Breakfast',
-    routeName: 'milk-breakfast',
+    routeName: 'milk_breakfast',
     items: [
       {
         id: 24,
@@ -216,7 +216,7 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  food: {
     id: 4,
     title: 'Food',
     routeName: 'food',
@@ -272,7 +272,7 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  beverage:{
     id: 5,
     title: 'Beverage',
     routeName: 'beverage',
@@ -321,10 +321,10 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  detergent_cleaning: {
     id: 6,
     title: 'Detergent and Cleaning',
-    routeName: 'detergent-cleaning',
+    routeName: 'detergent_cleaning',
     items: [
       {
         id: 42,
@@ -370,10 +370,10 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  paper_cosmetics: {
     id: 7,
     title: 'Paper and Cosmetics',
-    routeName: 'paper-cosmetics',
+    routeName: 'paper_cosmetics',
     items: [
       {
         id: 48,
@@ -419,10 +419,10 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  baby_toys: {
     id: 8,
     title: 'Baby and Toys',
-    routeName: 'baby-toys',
+    routeName: 'baby_toys',
     items: [
       {
         id: 54,
@@ -468,10 +468,10 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  home_pet: {
     id: 9,
     title: 'Home and Pet',
-    routeName: 'home-pet',
+    routeName: 'home_pet',
     items: [
       {
         id: 60,
@@ -517,7 +517,7 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  electronic: {
     id: 10,
     title: 'Electronic',
     routeName: 'electronic',
@@ -566,7 +566,7 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  discounts: {
     id: 11,
     title: 'Discounts',
     routeName: 'discounts',
@@ -615,7 +615,7 @@ export const PRODUCT_DATA = [
       }
     ]
   },
-  {
+  hakanskop: {
     id: 12,
     title: 'hakanskop',
     routeName: 'hakanskop',
@@ -664,4 +664,4 @@ export const PRODUCT_DATA = [
       }
     ]
   }
-];
+};

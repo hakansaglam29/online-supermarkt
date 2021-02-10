@@ -1,10 +1,10 @@
 import "./sidebar-item.styles.scss";
 import { useContext } from 'react';
 import { useHistory } from "react-router-dom";
-import { HeaderContext } from "../../App";
+import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
 
 const SidebarItem = ({ cName, icon, title, path, match }) => {
-    const { sidebar, showSidebar } = useContext(HeaderContext);
+    const { sidebar, showSidebar } = useContext(SidebarContext);
     const history = useHistory();
 
     return (

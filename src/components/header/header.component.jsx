@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { HeaderContext } from "../../App";
+import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
 import SidebarDirectory from '../sidebar-directory/sidebar-directory.component';
 import Menu from '../../assets/icons/menu'
 import SearchBar from '../search-bar/search-bar.component'
@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
 
-    const { showSidebar } = useContext(HeaderContext);
+    const { showSidebar } = useContext(SidebarContext);
 
     return (
         <>
