@@ -1,0 +1,30 @@
+.title-container {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.253);
+    max-width: 97.5%;
+    margin: 15px auto 25px;
+  
+  }
+    
+  .title {
+    font-size: 18px;
+    font-weight: 200;
+    margin: 25px auto 5px;
+    text-align: left;
+  }
+  
+  .items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;;
+    overflow: hidden;
+    & > div {
+      margin-bottom: 10px;
+    }
+  }
+
+
+@media only screen and (max-width: 990px) {
+    .items-container {
+        justify-content: space-between;;
+}   }
+  

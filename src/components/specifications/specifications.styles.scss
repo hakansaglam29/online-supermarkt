@@ -1,0 +1,25 @@
+.specifications-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .specification {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+            max-width: 80px;
+            padding-left: 10px;
+            font-size: 16px;
+            font-weight: lighter;
+
+            @media only screen and (max-width: 660px)  {
+                font-size: 10px;
+            }
+        }
+    }
+
+}

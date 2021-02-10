@@ -1,0 +1,48 @@
+.search {
+    margin: 0 75px;
+}
+.inputWrapper {
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inputWrapper a {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background: rgb(255, 153, 0);
+    color:rgb(255, 255, 255) ;
+    height: 35px;
+    border: none;
+    width: 80px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    width: 400px;
+    height: 35px;
+    text-indent: 30px;
+    border: none;
+    
+}
+
+.searchIcon {
+    position: absolute;
+    z-index: 888;
+    top: 6px;
+    left: 4px;
+    
+}
+
+@media only screen and (max-width: 990px) { 
+    .search {
+        margin: 0px;
+    }
+    
+    .input {
+        width: 90vw;
+    }
+  }

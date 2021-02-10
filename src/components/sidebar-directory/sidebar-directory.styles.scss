@@ -1,0 +1,38 @@
+.nav-menu {
+    background-color: rgb(44, 42, 42);
+    width: 90px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:55px;
+    left: -10px;
+    padding-right: 5px;
+}
+
+.nav-menu.active {
+    left:-10px;
+    width: 262px;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+@media only screen and (max-width: 990px) {
+    .nav-menu {
+        top:100px;
+        width: 70px;
+    }
+    .nav-menu.active {
+        width: 245px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .nav-menu {
+        width: 60px;
+    }
+    .nav-menu.active {
+        width: 245px;
+    }
+}
