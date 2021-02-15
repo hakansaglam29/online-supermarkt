@@ -31,7 +31,7 @@ const CartItem = ({ cartItem: { imageUrl, price, name, quantity, unit }, cartIte
     </div>
     <div>
       <span className='price'>
-        {price*quantity} €
+        {(price*quantity).toFixed(2)} €
       </span>
     </div>
     <div className='remove-button' onClick={() => clearItemFromCart(cartItem)}>

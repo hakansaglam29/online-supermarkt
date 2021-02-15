@@ -10,12 +10,14 @@ export default function Home() {
 
     return (
         <div
-            className={ 
-                   sidebar ? 'homepage-wrapper active' : 'homepage-wrapper'
+            className={
+                sidebar ? 'homepage-wrapper active' : 'homepage-wrapper'
             }
         >
-            <Slider />
-            <Specificications />
+            <div className='slider-wrapper'>
+                <Slider />
+                <Specificications className='specific'/>
+            </div>
             <Products />
         </div>
     )

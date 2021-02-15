@@ -9,7 +9,7 @@ function CartIcon() {
     return (
         <div className='shopWrapper' >
             <div className='dropdown'>
-                {(cartItemsCount>0) ? <div className='total'>{total} €</div> : null}
+                {(cartItemsCount>0) ? <div className='total'>{total.toFixed(2)} €</div> : null}
                 <div>
                     <Shopping />
                 </div>

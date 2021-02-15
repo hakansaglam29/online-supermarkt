@@ -7,6 +7,14 @@
     margin:10px 10px 20px 260px;
 }
 
+.slider-wrapper {
+    position: relative;
+}
+.specific {
+    position: absolute;
+    bottom: 100px;
+}
+
 @media only screen and (max-width: 990px) {
     .homepage-wrapper {
         margin:10px 10px 20px 70px;
