@@ -1,19 +1,32 @@
 import CollectionsContext from '../../contexts/collections/collections.context';
-import { useContext} from 'react';
+import CollectionItem from '../../components/collection-item/collection-item.component';
+import { useContext } from 'react';
+import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
+import Category from '../../components/category/category.component';
 
 
-import  './collection.styles.scss';
+import './collection.styles.scss';
 
-const CollectionPage = () => {
+const CollectionPage = ({ match }) => {
+  const { sidebar } = useContext(SidebarContext);
   const collections = useContext(CollectionsContext);
- 
-  
+  const collection = collections[match.params.id]
+  const { items, title } = collection
+
+
   return (
-    <div>
-      hello
+    <div className={sidebar ? 'collection-page active' : 'collection-page'}>
+      <Category title={title}/>
+      <div className = 'items-wrapper'>
+        <p className = 'item-title'>Home Page > <span>{title}</span></p>
+        <div className='items'>
+          {items.map(e => (
+            <CollectionItem key={e.id} e={e} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
-
 
 export default CollectionPage;

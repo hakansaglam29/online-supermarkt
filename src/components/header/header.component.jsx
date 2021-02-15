@@ -1,9 +1,11 @@
 import { useContext } from 'react';
 import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
+import { CartContext } from "../../providers/cart/cart.provider";
 import SidebarDirectory from '../sidebar-directory/sidebar-directory.component';
 import Menu from '../../assets/icons/menu'
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import SearchBar from '../search-bar/search-bar.component'
-import Shop from '../shop-button/shop-button.component'
+import CardIcon from '../cart-icon/cart-icon.component'
 import './header.styles.scss';
 import { Link } from 'react-router-dom';
 
@@ -11,19 +13,19 @@ import { Link } from 'react-router-dom';
 function Header() {
 
     const { showSidebar } = useContext(SidebarContext);
-
+    const { hidden } = useContext(CartContext);
     return (
         <>
-            <div className='navbar'>
+            <div className='navbar' >
                 <div className='menu'>
                     <div className='menu-bars' id='item-1'>
                         <Menu onClick={showSidebar} />
                         <span onClick={showSidebar} >All Catagories</span>
                     </div >
                     <div id='item-2'>
-                        <SearchBar  />
+                        <SearchBar />
                     </div>
-                    
+
                     <div id='item-3'>
                         <Link to='#' className='register'>
                             <span>Register</span>
@@ -34,11 +36,14 @@ function Header() {
                         </Link>
                     </div>
                     <div id='item-4'>
-                        <Shop />
+                        <CardIcon />
                     </div>
                 </div>
             </div>
-            <SidebarDirectory/>
+            <SidebarDirectory />
+            <div className='dropdown-wrapper'>
+                {hidden ? null : <CartDropdown />}
+            </div>
         </>
     )
 }

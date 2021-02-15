@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { useHistory } from "react-router-dom";
 import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
 
-const SidebarItem = ({ cName, icon, title, path, match }) => {
+const SidebarItem = ({ cName, icon, title, path }) => {
     const { sidebar, showSidebar } = useContext(SidebarContext);
     const history = useHistory();
 

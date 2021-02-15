@@ -1,0 +1,26 @@
+.category-wrapper {
+    min-width: 150px ;
+    max-height: 70vh;
+    background-color: rgba(197, 197, 197, 0.384);
+    margin-right: 20px;
+}
+
+.category-title {
+    min-height: 100px;
+    background-color: rgba(216, 214, 214, 0.842);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.582);
+
+    .category-name {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+        padding: 0 15px;
+        color:  rgba(0, 0, 0, 0.782)
+    }
+}
+

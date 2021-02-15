@@ -1,9 +1,11 @@
+import React, {useContext} from 'react';
 import './collection-item.styles.scss';
+import { CartContext } from '../../providers/cart/cart.provider';
 
 const CollectionItem = ({ e }) => {
 
     const { imageUrl, name, price, unit } = e;
-
+    const { addItem } = useContext(CartContext)
     return (
 
         <div className='item-container'>
@@ -17,7 +19,7 @@ const CollectionItem = ({ e }) => {
             <div className='unit'>
                 <p> {unit}</p>
             </div>
-            <button>
+            <button onClick={() => addItem(e)} inverted>
                 Add
             </button>
         </div>

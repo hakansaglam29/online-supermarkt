@@ -1,16 +1,27 @@
 import './collection-preview.styles.scss'
 import useWindowDimensions from '../window-dimensions/window-dimensions.component';
-
+import { useHistory } from "react-router-dom";
+import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
 import CollectionItem from '../collection-item/collection-item.component';
-
+import { useContext } from 'react';
 
 
 const CollectionPreview = ({item}) => {
+    const { sidebar, showSidebar } = useContext(SidebarContext);
     const { width } = useWindowDimensions();
+    const history = useHistory();
     return (
         <div>
             <div className='title-container'>
                 <h2 className='title' >{item.title}</h2>
+                <p
+                onClick={() => {
+                    history.push(`/${item.routeName}`);
+                    if (sidebar) {
+                        showSidebar()
+                    };
+                }}
+                >Show all ></p>
             </div>
             <div className='items-container'>
                 {item.items

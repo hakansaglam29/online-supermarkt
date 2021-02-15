@@ -1,0 +1,35 @@
+.shopWrapper {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.dropdown {
+    min-width: 75px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    font-weight:600;
+}
+.item-count {
+    position: absolute;
+    background-color: rgb(255, 153, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 12px;
+    right:30px;
+    top:1px;
+}
+.total{
+    padding: 0 10px;
+    color:  rgb(252, 153, 6);
+}

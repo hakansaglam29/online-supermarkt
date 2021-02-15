@@ -18,21 +18,21 @@ export const SidebarData = {
   {
     id: 1001,
     title: 'Fruits, Vegetables',
-    path: '/fruits-vegetables',
+    path: '/fruits_vegetables',
     icon: <Meyve />,
     cName: 'nav-text'
   },
   {
     id: 1002,
     title: 'Meat, Chicken, Fish',
-    path: '/meat-chicken-fish',
+    path: '/meat_chicken_fish',
     icon: <EtIcon />,
     cName: 'nav-text'
   },
   {
     id: 1003,
     title: 'Milk, Breakfast',
-    path: '/milk-breakfast',
+    path: '/milk_breakfast',
     icon: <SutIcon />,
     cName: 'nav-text'
   },
@@ -53,28 +53,28 @@ export const SidebarData = {
   {
     id: 1006,
     title: 'Detergent, Cleaning',
-    path: '/detergent-cleaning',
+    path: '/detergent_cleaning',
     icon: <CleaningIcon />,
     cName: 'nav-text'
   },
   {
     id: 1007,
     title: 'Paper, Cosmetics',
-    path: '/paper-cosmetics',
+    path: '/paper_cosmetics',
     icon: <CosmeticIcon />,
     cName: 'nav-text'
   },
   {
     id: 1008,
     title: 'Baby, Toys',
-    path: '/baby-toys',
+    path: '/baby_toys',
     icon: <BabyIcon />,
     cName: 'nav-text'
   },
   {
     id: 1009,
     title: 'Home, Pet',
-    path: '/home-pet',
+    path: '/home_pet',
     icon: <HausIcon />,
     cName: 'nav-text'
   },
