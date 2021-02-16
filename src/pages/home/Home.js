@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
-import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
+import { CartContext } from "../../providers/cart/cart.provider";
 import Slider from '../../components/slider/slider'
 import Specificications from '../../components/specifications/specifications.component';
 import Products from '../../components/collection-overview/collection.component';
 import './Home.scss'
 
 export default function Home() {
-    const { sidebar } = useContext(SidebarContext);
-
+    const { sidebar} = useContext(CartContext);
     return (
         <div
             className={

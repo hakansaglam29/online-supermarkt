@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
 import { CartContext } from "../../providers/cart/cart.provider";
 import SidebarDirectory from '../sidebar-directory/sidebar-directory.component';
 import Menu from '../../assets/icons/menu'
@@ -11,9 +10,8 @@ import { Link } from 'react-router-dom';
 
 
 function Header() {
-
-    const { showSidebar } = useContext(SidebarContext);
-    const { hidden } = useContext(CartContext);
+    const { hidden, showSidebar } = useContext(CartContext);
+    
     return (
         <>
             <div className='navbar' >

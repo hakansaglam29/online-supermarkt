@@ -19,7 +19,7 @@ const CollectionItem = ({ e }) => {
             <div className='unit'>
                 <p> {unit}</p>
             </div>
-            <button onClick={() => addItem(e)} inverted>
+            <button onClick={() => addItem(e)} inverted='true'>
                 Add
             </button>
         </div>

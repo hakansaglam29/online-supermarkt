@@ -1,14 +1,14 @@
 import CollectionsContext from '../../contexts/collections/collections.context';
 import CollectionItem from '../../components/collection-item/collection-item.component';
 import { useContext } from 'react';
-import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
+import { CartContext } from "../../providers/cart/cart.provider";
 import Category from '../../components/category/category.component';
 
 
 import './collection.styles.scss';
 
 const CollectionPage = ({ match }) => {
-  const { sidebar } = useContext(SidebarContext);
+  const { sidebar } = useContext(CartContext);
   const collections = useContext(CollectionsContext);
   const collection = collections[match.params.id]
   const { items, title } = collection

@@ -1,11 +1,12 @@
 import {useContext} from 'react';
-import {SearchContext} from '../../providers/search/search.provider';
+import {CartContext} from '../../providers/cart/cart.provider';
 import Search from '../../assets/icons/SearchIcon'
 import './search-bar.styles.scss';
 import { Link } from 'react-router-dom';
 
 function SearchBar() {
-    const { setInputData, inputData } = useContext(SearchContext);
+    const {setInputData, inputData} = useContext(CartContext)
+
     return (
         <div className='search'>
             <div className='inputWrapper'>
@@ -15,9 +16,7 @@ function SearchBar() {
                     placeholder='Search product...'
                     className='input'
                     value={inputData}
-                    onChange={(e) => {
-                        setInputData(e?.target?.value)
-                    }}
+                    onChange={(event) => setInputData(event.target.value)}
                 />   
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React, {useState, createContext, useEffect} from 'react';
+import useWindowDimensions from '../../components/window-dimensions/window-dimensions.component';
 
 import { 
     addItemToCart, 
@@ -9,7 +10,9 @@ import {
         } from './cart.utils';
 
 export const CartContext = createContext({
+    inputData:'b',
     hidden:true,
+    setInputData: () => { },
     toggleHidden : () => { },
     cartItems: [],
     addItem: () => { },
@@ -17,14 +20,20 @@ export const CartContext = createContext({
     clearItemFromCart: () => { },
     cartItemsCount: 0,
     total: () => { },
+    sidebar: true,
+    showSidebar: () => { },
 });
 
 const CartProvider = ({ children }) => {
+    const { width } = useWindowDimensions();
+    const [inputData, setInputData] = useState('')
+    const [sidebar, setSidebar] = useState((width<1025) ? false : true)
     const [hidden, setHidden] = useState(true);
     const [cartItems, setCartItems] = useState([]);
     const [cartItemsCount, setCartItemsCount] = useState(0)
     const [total, setTotal] = useState(0)
 
+    const showSidebar = () => setSidebar(!sidebar)
     const toggleHidden = () => setHidden(!hidden);
     const addItem = item => setCartItems(addItemToCart(cartItems, item));
     const removeItem = item => setCartItems(removeItemFromCart(cartItems, item));
@@ -44,7 +53,11 @@ const CartProvider = ({ children }) => {
                 removeItem,
                 clearItemFromCart,
                 cartItemsCount,
-                total
+                total,
+                sidebar,
+                showSidebar,
+                inputData,
+                setInputData,
             }}
         >
             {children}

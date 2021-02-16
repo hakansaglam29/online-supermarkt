@@ -1,13 +1,13 @@
 import './collection-preview.styles.scss'
 import useWindowDimensions from '../window-dimensions/window-dimensions.component';
 import { useHistory } from "react-router-dom";
-import { SidebarContext } from "../../providers/sidebar/sidebar.provider";
+import { CartContext } from "../../providers/cart/cart.provider";
 import CollectionItem from '../collection-item/collection-item.component';
 import { useContext } from 'react';
 
 
 const CollectionPreview = ({item}) => {
-    const { sidebar, showSidebar } = useContext(SidebarContext);
+    const { sidebar, showSidebar } = useContext(CartContext);
     const { width } = useWindowDimensions();
     const history = useHistory();
     return (
