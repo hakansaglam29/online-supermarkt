@@ -1,0 +1,230 @@
+.product-info {
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.item-detail-info {
+    width: 450px;
+    height: 450px;
+    padding-left: 20px;
+
+    @media only screen and (max-width: 990px) {
+        margin-top: 30px;
+        padding-left: unset;
+    }
+
+    @media only screen and (max-width: 425px) {
+        max-width: 330px;
+     }
+}
+
+.name {
+    color: rgba(0, 0, 0, 0.833);
+    margin-left: 10px;
+}
+
+.brand {
+    margin: 15px 10px;
+    color: rgba(0, 0, 0, 0.533);
+    span {
+        color: rgb(39, 39, 214);
+        font-weight: bold;
+        padding-left: 5px;
+    }
+}
+
+.price-detail {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(255, 153, 0);
+}
+
+.price-detail-discount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(120deg, gray 50%, rgb(255, 230, 0) 50%);
+    margin: 25px 10px 0px;
+    width: 50%;
+    height: 40px;
+
+    :first-child {
+      color: white;
+      font-size: 15px;
+    }
+
+    .discount-p {
+        font-size: 20px;
+        
+    }
+  }
+  .unit-add-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(216, 216, 216, 0.275);
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+
+  .unit-add {
+      display: flex;
+      padding: 10px;
+      
+
+      button {
+        width: 45%;
+        margin: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        background-color:rgb(255, 153, 0);
+        cursor: pointer;
+    
+      &:hover {
+        background-color:rgba(255, 153, 0, 0.795);
+      } 
+      }
+  }
+
+  .unit-detail {
+      background-color: white;
+      border: 0.5px solid gray;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 10px;
+  }
+
+  .product-detail-text {
+      padding: 10px;
+
+      textarea {
+        margin-top: 10px;
+        border-radius: 5px;;
+        background-color: white;
+
+        @media only screen and (max-width: 990px) {
+            width: 280px;
+        }
+          
+      }
+      ::placeholder {
+        color: rgba(0, 0, 0, 0.216);
+        padding: 2px;
+    }
+  }
+
+
+
+.item-detail {
+    margin: 10px auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.item-detail.active {
+    margin:10px 10px 20px 260px;
+}
+
+
+.item-detail-title { 
+    width: 900px;
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.596);
+    margin: 10px 0 40px;
+    span {
+        color: rgba(0, 0, 0, 0.932);
+    }
+
+    @media only screen and (max-width: 900px) {
+       width: unset;
+       margin: 5px 0 15px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        font-size: 14px;
+     }
+
+
+}
+
+.item-detail-image {
+    border: 1px solid rgba(0, 0, 0, 0.163);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 425px) {
+        max-width: 330px;
+        height: 280px;
+     }
+}
+
+.item-detail-add-remove {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%
+
+}
+
+.item-detail-account {
+    border: 2px solid rgba(255, 137, 2, 0.815);
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+
+    span {
+        font-size: 20px;
+    }
+}
+
+.detail-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .item-detail {
+        margin:10px 10px 20px 70px;
+    }
+    .item-detail.active {
+        margin:10px 10px 20px 240px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .item-detail {
+        margin:10px 10px 20px 63px;
+    }
+    .item-detail.active {
+        margin:10px 10px 20px 63px;
+    }
+}

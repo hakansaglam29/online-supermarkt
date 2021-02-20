@@ -11,14 +11,14 @@ const CollectionPage = ({ match }) => {
   const { sidebar } = useContext(CartContext);
   const collections = useContext(CollectionsContext);
   const collection = collections[match.params.id]
-  const { items, title } = collection
-
+  const collection_list = Object.keys(collection).map(key => collection[key])
+  const items = Object.keys(collection_list[3]).map(key => collection_list[3][key])
 
   return (
     <div className={sidebar ? 'collection-page active' : 'collection-page'}>
-      <Category title={title}/>
+      <Category title={collection_list[1]}/>
       <div className = 'items-wrapper'>
-        <p className = 'item-title'>Home Page > <span>{title}</span></p>
+        <p className = 'item-title'>Home Page > <span>{collection_list[1]}</span></p>
         <div className='items'>
           {items.map(e => (
             <CollectionItem key={e.id} e={e} />

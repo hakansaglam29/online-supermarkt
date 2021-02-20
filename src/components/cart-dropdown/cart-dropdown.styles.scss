@@ -1,10 +1,9 @@
 .cart-dropdown {
   position: fixed;
   width: 400px;
-  height: 340px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   background-color: white;
   top:60px;
@@ -34,7 +33,14 @@
 
   @media only screen and (max-width: 990px) {
     top:105px;
-  }   
+    width: 220px;
+    right: 20px;
+    padding: 5px;
+  }
+  @media only screen and (max-width: 425px) {
+    right: 10px;
+   
+  }     
 
 }
 
@@ -58,5 +64,9 @@
 }
 .checkout-title {
   font-size: 14px;
-  ;
+  color: rgba(0, 0, 0, 0.625);
+
+  @media only screen and (max-width: 990px) {
+    display: none;
+}
 }

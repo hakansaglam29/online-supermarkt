@@ -7,12 +7,13 @@ import CollectionPreview from '../collection-preview/collection-preview.componen
 const CollectionsOverview = () => {
   const collectionsMap = useContext(CollectionsContext);
   const collections = Object.keys(collectionsMap).map(key => collectionsMap[key])
-  
+  const collection_list = Object.keys(collections).map(key => collections[key])
   return (
     <div className='collection-container'>
-      {collections.map(item => (
+      {collection_list.map(item => (
         <CollectionPreview key={item.id} item={item}/>
-      ))}
+      )
+    )}
     </ div>
   );
 };

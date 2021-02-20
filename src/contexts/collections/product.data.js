@@ -9,126 +9,144 @@ const PRODUCT_DATA = {
         name: 'Banana',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27270000/muz-yerli-kg-9d3d01-1650x1650.jpg',
         price: 1.1,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/banana'
       },
       {
         id: 2,
         name: 'Avacado',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/28010004/28010004-10a053-1650x1650.jpg',
         price: 0.90,
-        unit: 'Piece'
+        unit: 'Piece',
+        path:'fruits_vegetables/avacado'
       },
       {
         id: 3,
         name: 'Mango',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27580003/mango-adet-604864-1650x1650.jpg',
         price: 1.5,
-        unit: 'Piece'
+        unit: 'Piece',
+        path:'fruits_vegetables/mango'
       },
       {
         id: 4,
         name: 'Onion',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/28420000/sogan-kuru-dokme-kg-25131e-1650x1650.jpg',
         price: 0.5,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/onion'
       },
       {
         id: 5,
         name: 'Tomato',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/28080000/domates-kg-c7462d-1650x1650.jpg',
         price: 0.82,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/tomato'
       },
       {
         id: 6,
         name: 'Aubergine',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/28303000/patlican-kemer-kg-2ac52c-1650x1650.jpg',
         price: 1.2,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/aubergine'
       },
       {
         id: 7,
         name: 'Zucchini',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/28160000/kabak-sakiz-kg-31919c-1650x1650.jpg',
         price: 1.3,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/zucchini'
       },
       {
         id: 8,
         name: 'Paprika',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/28053000/biber-kirmizi-kg-4ad206-1650x1650.jpg',
         price: 0.9,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/paprika'
       },
       {
         id: 9,
         name: 'Grapefruit',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27161000/greyfurt-kg-96423c-1650x1650.jpg',
         price: 1.2,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/grapefruit'
       },
       {
         id: 10,
         name: 'Lemon',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27260002/limon-kg-fbc52a-1650x1650.jpg',
         price: 0.3,
-        unit: 'Piece'
+        unit: 'Piece',
+        path:'fruits_vegetables/lemon'
       },
       {
         id: 11,
         name: 'Appel Granny',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27133000/elma-granny-smith-kg-0e9183.jpg',
         price: 0.8,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/appel_granny'
       },
       {
         id: 12,
         name: 'Pear',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27023000/armut-ankara-kg-b3f795-1650x1650.jpg',
         price: 0.9,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/pear'
       },
       {
         id: 13,
         name: 'Quince',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27030000/ayva-kg-6ac82d.jpg',
         price: 1.3,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/quince'
       },
       {
         id: 14,
         name: 'Carrot',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/28129037/havuc-beypazari-paket-kg-b3accf.jpg',
         price: 0.6,
-        unit: 'Piece'
+        unit: 'Piece',
+        path:'fruits_vegetables/carrot'
       },
       {
         id: 15,
         name: 'Kiwi',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27251234/dogu-karadeniz-kivisi-kg-8d9fb6.jpg',
         price: 1.9,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/kiwi'
       },
       {
         id: 16,
         name: 'pineapple',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27501003/-ananas-adet-c1fa49.jpg',
         price: 1.4,
-        unit: 'Piece'
+        unit: 'Piece',
+        path:'fruits_vegetables/pineapple'
       },
       {
         id: 17,
         name: 'Strawberry',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27081000/27081000-7e292e.jpg',
         price: 4.5,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/strawberry'
       },
       {
         id: 18,
         name: 'Mandarin',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/27286003/27286003-49e7ca.jpg',
         price: 1.4,
-        unit: 'Kg'
+        unit: 'Kg',
+        path:'fruits_vegetables/mandarin'
       },
     ]
   },

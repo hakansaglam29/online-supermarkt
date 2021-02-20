@@ -10,6 +10,7 @@ const CollectionPreview = ({item}) => {
     const { sidebar, showSidebar } = useContext(CartContext);
     const { width } = useWindowDimensions();
     const history = useHistory();
+    const item_key = Object.keys(item.items).map(key => item.items[key])
     return (
         <div>
             <div className='title-container'>
@@ -24,7 +25,7 @@ const CollectionPreview = ({item}) => {
                 >Show all ></p>
             </div>
             <div className='items-container'>
-                {item.items
+                {item_key
                     .filter((e, index) => 
                         {if (width>1400) {
                             return index<9   

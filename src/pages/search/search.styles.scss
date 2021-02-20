@@ -1,13 +1,20 @@
 .search-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: left;
     align-items: stretch;
     flex-wrap: wrap;
+    margin:auto;
+    margin:10px 10px 20px 90px;
+}
+
+.search-container.active {
+    margin:10px 10px 20px 260px;
 }
 
 .items-search {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: stretch;
     flex-wrap: wrap;
 }

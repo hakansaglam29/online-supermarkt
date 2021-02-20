@@ -11,7 +11,7 @@ function SearchBar() {
         <div className='search'>
             <div className='inputWrapper'>
                  <Search className='searchIcon'/>
-                 <Link className='button' to="/search">Search</Link>
+                 <Link className='button' to="/search" >Search</Link>
                  <input
                     placeholder='Search product...'
                     className='input'
