@@ -125,13 +125,16 @@
 
 
 .item-detail {
+    margin:10px 10px 20px 260px;
     margin: 10px auto;
     max-width: 900px;
     display: flex;
     flex-direction: column;
 }
 .item-detail.active {
-    margin:10px 10px 20px 260px;
+    @media only screen and (max-width: 1440px) {
+        margin:10px 10px 20px 260px;
+    }
 }
 
 
@@ -211,12 +214,18 @@
 }
 
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1070px) {
     .item-detail {
-        margin:10px 10px 20px 70px;
+        margin:10px 10px 20px 90px;
     }
     .item-detail.active {
         margin:10px 10px 20px 240px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .item-detail.active {
+        margin:10px 10px 20px 70px;
     }
 }
 

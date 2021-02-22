@@ -227,7 +227,7 @@ const PRODUCT_DATA = {
         title: 'Meat, Chicken and Fish',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/25010560/25010560-9a64ab',
         price: 4.5,
-        discount: 0,
+        discount: 0.2,
         unit: 'Kg',
         path: 'meat_chicken_fish/beef_lamb_chop'
       },
@@ -434,7 +434,7 @@ const PRODUCT_DATA = {
         price: 7.8,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/sütBon_goat_cheese'
       },
       bahcivan_white_cheese:{
         id: 39,
@@ -445,7 +445,7 @@ const PRODUCT_DATA = {
         price: 4.7,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/bahcivan_white_cheese'
       },
       akpinar_tulum_cheese:{
         id: 40,
@@ -456,7 +456,7 @@ const PRODUCT_DATA = {
         price: 6.1,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/akpinar_tulum_cheese'
       },
       akpinar_old_yellow_cheese:{
         id: 41,
@@ -467,7 +467,7 @@ const PRODUCT_DATA = {
         price: 7.1,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/akpinar_old_yellow_cheese'
       },
       egg_20x:{
         id: 42,
@@ -478,7 +478,7 @@ const PRODUCT_DATA = {
         price: 3.1,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/egg_20x'
       },
       egg_10x:{
         id: 43,
@@ -489,7 +489,7 @@ const PRODUCT_DATA = {
         price: 1.7,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/egg_10x'
       },
       egg_30x:{
         id: 44,
@@ -500,7 +500,7 @@ const PRODUCT_DATA = {
         price: 3.7,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/egg_30x'
       },
       ilyada_black_olives:{
         id: 45,
@@ -511,7 +511,7 @@ const PRODUCT_DATA = {
         price: 3.5,
         discount: 0,
         unit: 'Kg',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/ilyada_black_olives'
       },
       fora_olives_paste:{
         id: 46,
@@ -522,7 +522,7 @@ const PRODUCT_DATA = {
         price: 1.1,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/fora_olives_paste'
       },
       whole_green_olives_400G:{
         id: 47,
@@ -533,7 +533,7 @@ const PRODUCT_DATA = {
         price: 2.4,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/whole_green_olives_400G'
       },
       oncü_black_olives_1000G:{
         id: 48,
@@ -544,7 +544,7 @@ const PRODUCT_DATA = {
         price: 6.5,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/oncü_black_olives_1000G'
       },
       balparmak_honig_mix_180G:{
         id: 49,
@@ -555,7 +555,7 @@ const PRODUCT_DATA = {
         price: 2.2,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/balparmak_honig_mix_180G'
       },
       koska_kürek_halvah_350G:{
         id: 50,
@@ -566,7 +566,7 @@ const PRODUCT_DATA = {
         price: 1.5,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/koska_kürek_halvah_350G'
       },
       koska_halvah_with_pistachio_350G:{
         id: 51,
@@ -577,7 +577,7 @@ const PRODUCT_DATA = {
         price: 2.5,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/koska_halvah_with_pistachio_350G'
       },
       fomilk_milk_vegan_1Lt:{
         id: 52,
@@ -588,7 +588,7 @@ const PRODUCT_DATA = {
         price: 0.7,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/fomilk_milk_vegan_1Lt'
       },
       sek_macchiato_330Ml:{
         id: 53,
@@ -599,7 +599,7 @@ const PRODUCT_DATA = {
         price: 0.47,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/sek_macchiato_330Ml'
       },
       activia_smoothie_200Ml:{
         id: 54,
@@ -610,7 +610,7 @@ const PRODUCT_DATA = {
         price: 0.55,
         discount: 0,
         unit: 'Piece',
-        path: 'milk_breakfast/taciroglu_kasgaval_cheese'
+        path: 'milk_breakfast/activia_smoothie_200Ml'
       }
     }
   },
@@ -868,16 +868,16 @@ const PRODUCT_DATA = {
         unit: 'Piece',
         path: 'beverage/Damla_Water_330ml'
       },
-      Entschlackungstee_Form_Cayı_40_G:{
+      Form_Cayı_40_G:{
         id: 77,
-        name: 'Entschlackungstee Form Çayı 40 G',
+        name: 'Form Çayı 40 G',
         brand: 'Entschlackungstee',
         title: 'Beverage',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/03132142/entschlackungstee-zayiflama-cayi-40-gr-bd27e0',
         price: 0.9,
         discount: 0.1,
         unit: 'Piece',
-        path: 'beverage/Entschlackungstee_Form_Cayı_40_G'
+        path: 'beverage/Form_Cayı_40_G'
       },
       Nestle_Pure_Life_1500ml:{
         id: 78,
@@ -1644,7 +1644,7 @@ const PRODUCT_DATA = {
     title: 'Home and Pet',
     routeName: 'home_pet',
     items: {
-      Şnorkel_14:{
+      Snorkel_14:{
         id: 145,
         name: 'Şnorkel +14',
         brand: 'Scotch Brite',
@@ -1653,7 +1653,7 @@ const PRODUCT_DATA = {
         price: 2.3,
         discount: 0,
         unit: 'Piece',
-        path: 'home_pet/snorkel_+14'
+        path: 'home_pet/Snorkel_14'
       },
       Nk_Yoga_Matı_155X60CmX5Mm:{
         id: 146,
@@ -2306,7 +2306,7 @@ const PRODUCT_DATA = {
       Think_Type_C_Sarj_Data_Kablo_1_Metre:{
         id: 203,
         name: 'Think Type-C Şarj & Data Kablo 1 Metre',
-        brand: 'Scotch Brite',
+        brand: 'Think',
         title: 'Hakanskop',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/39182415/39182415-8439bf',
         price: 2,
@@ -2317,7 +2317,7 @@ const PRODUCT_DATA = {
       Aprilla_Exclusive_Ahd_2127_Sac_Kurutma_Makinesi:{
         id: 204,
         name: 'Aprilla Exclusive Ahd-2127 Saç Kurutma Makinesi',
-        brand: 'Scotch Brite',
+        brand: 'Aprilla',
         title: 'Hakanskop',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/39066188/39066188-f228e9',
         price: 9,
@@ -2328,7 +2328,7 @@ const PRODUCT_DATA = {
       Kiwi_Ksm_2405w_Waffle_Makinesi:{
         id: 205,
         name: 'Kiwi Ksm-2405w Waffle Makinesi',
-        brand: 'Scotch Brite',
+        brand: 'Kiwi',
         title: 'Hakanskop',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/39026022/39026022-bdd91f',
         price: 12,
@@ -2336,21 +2336,21 @@ const PRODUCT_DATA = {
         unit: 'Piece',
         path: 'hakanskop/Kiwi_Ksm_2405w_Waffle_Makinesi'
       },
-      Urban_Mood_Ultrasonic_Şarjlı_Yüz_Temizleme_Cihazı:{
+      Arzum_Ar1123_Ar1123_B_Ecomix_Mikser:{
         id: 206,
-        name: 'Urban Mood Ultrasonic Şarjlı Yüz Temizleme Cihazı',
-        brand: 'Scotch Brite',
+        name: 'Arzum Ar1123 Ar1123-B Ecomix Mikser',
+        brand: 'Arzum',
         title: 'Hakanskop',
-        imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/39090288/39090288-a560c6.png',
-        price: 6,
+        imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/39046564/39046564-dbd42d',
+        price: 25,
         discount: 0,
         unit: 'Piece',
-        path: 'hakanskop/Urban_Mood_Ultrasonic_Şarjlı_Yüz_Temizleme_Cihazı'
+        path: 'hakanskop/Arzum_Ar1123_Ar1123_B_Ecomix_Mikser'
       },
       Rowell_2000W_Elektrikli_Fan_Isıtıcı_Lq_501:{
         id: 207,
         name: 'Rowell 2000W Elektrikli Fan Isıtıcı Lq-501',
-        brand: 'Scotch Brite',
+        brand: 'Rowell',
         title: 'Hakanskop',
         imageUrl: 'https://migros-dali-storage-prod.global.ssl.fastly.net/sanalmarket/product/39151230/39151230-6af964',
         price: 7,
