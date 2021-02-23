@@ -62,11 +62,11 @@ const ItemDetail = ({ match }) => {
                                         onClick={() => {
                                             removeItem(item);
                                         }}>
-                                        <span >-</span>
+                                        <span >&#10134;</span>
                                     </div>
                                     <span className='detail-count' >{a ? a : setVisible(true)}</span>
                                     <div className='item-detail-account' onClick={() => addItem(item)}>
-                                        <span >+</span>
+                                        <span >&#10133;</span>
                                     </div>
                                 </div >
                             }
