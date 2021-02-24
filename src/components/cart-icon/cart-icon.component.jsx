@@ -15,6 +15,7 @@ function CartIcon() {
                 <div  
                     onClick={() => {
                     history.push('/checkout');
+                    // eslint-disable-next-line
                     {if (!hidden) {toggleHidden()}}
                   }}>
                     <Shopping />
