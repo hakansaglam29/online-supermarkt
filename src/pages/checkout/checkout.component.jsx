@@ -19,7 +19,7 @@ const CheckoutPage = () => {
       <br />
       4242 4242 4242 4242 - Exp: Any future date - CVC: Any 3 digits
     </div>
-            <p>price={total}</p>
+            <p>price={total.toFixed(2)}</p>
         </div>
     )
 };
