@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/online-supermarkt/static/css/main.13d93c2c.chunk.css",
+    "main.js": "/online-supermarkt/static/js/main.053aaf5b.chunk.js",
+    "main.js.map": "/online-supermarkt/static/js/main.053aaf5b.chunk.js.map",
+    "runtime-main.js": "/online-supermarkt/static/js/runtime-main.30cb6005.js",
+    "runtime-main.js.map": "/online-supermarkt/static/js/runtime-main.30cb6005.js.map",
+    "static/css/2.34b29efe.chunk.css": "/online-supermarkt/static/css/2.34b29efe.chunk.css",
+    "static/js/2.b667e198.chunk.js": "/online-supermarkt/static/js/2.b667e198.chunk.js",
+    "static/js/2.b667e198.chunk.js.map": "/online-supermarkt/static/js/2.b667e198.chunk.js.map",
+    "index.html": "/online-supermarkt/index.html",
+    "static/css/2.34b29efe.chunk.css.map": "/online-supermarkt/static/css/2.34b29efe.chunk.css.map",
+    "static/css/main.13d93c2c.chunk.css.map": "/online-supermarkt/static/css/main.13d93c2c.chunk.css.map",
+    "static/js/2.b667e198.chunk.js.LICENSE.txt": "/online-supermarkt/static/js/2.b667e198.chunk.js.LICENSE.txt",
+    "static/media/box.f08a7c7e.svg": "/online-supermarkt/static/media/box.f08a7c7e.svg",
+    "static/media/fast_transport.b164f528.svg": "/online-supermarkt/static/media/fast_transport.b164f528.svg",
+    "static/media/flexible_payments.2e8a9273.svg": "/online-supermarkt/static/media/flexible_payments.2e8a9273.svg",
+    "static/media/market_logo.0c628061.svg": "/online-supermarkt/static/media/market_logo.0c628061.svg",
+    "static/media/over.bbd43d91.svg": "/online-supermarkt/static/media/over.bbd43d91.svg",
+    "static/media/supermarket-online-1.5fc1c011.jpg": "/online-supermarkt/static/media/supermarket-online-1.5fc1c011.jpg",
+    "static/media/supermarket-online-2.4d4be7d8.jpg": "/online-supermarkt/static/media/supermarket-online-2.4d4be7d8.jpg",
+    "static/media/supermarket-online-3.31d3077d.jpg": "/online-supermarkt/static/media/supermarket-online-3.31d3077d.jpg",
+    "static/media/supermarket-online-4.af75d8c1.jpg": "/online-supermarkt/static/media/supermarket-online-4.af75d8c1.jpg",
+    "static/media/unter.61da1327.svg": "/online-supermarkt/static/media/unter.61da1327.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30cb6005.js",
+    "static/css/2.34b29efe.chunk.css",
+    "static/js/2.b667e198.chunk.js",
+    "static/css/main.13d93c2c.chunk.css",
+    "static/js/main.053aaf5b.chunk.js"
+  ]
+}
