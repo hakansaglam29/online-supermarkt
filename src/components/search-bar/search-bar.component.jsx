@@ -3,7 +3,6 @@ import { CartContext } from '../../providers/cart/cart.provider';
 import SearchIcon from '../../assets/icons/SearchIcon'
 import './search-bar.styles.scss';
 import { useHistory } from 'react-router-dom';
-import Search from '../../assets/icons/SearchIcon';
 
 function SearchBar() {
     const { setInputData, inputData } = useContext(CartContext)
