@@ -1,9 +1,9 @@
-.navbar {
+.navbar-wrapper {
     background: rgb(44, 42, 42);
     display: block;
     position: sticky;
     top:0;
-    z-index: 999;
+    z-index: 3;
 }
 
 .menu {
@@ -23,6 +23,7 @@
 #item-1 {
     margin-right: 30px;
     cursor: pointer;
+
 }
 
 .menu-bars {
@@ -45,14 +46,26 @@
 @media only screen and (max-width: 1060px) {
     .menu {
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr 0.8fr;
+        grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto;
         grid-gap: 10px;
-        padding: 10px;
-        margin: 0px;
+        padding: 5px 0px 5px;
+        margin: 0;
     }
 
-    #item-5 {
+    #item-5{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background: white;
+        padding: 5px 9px;
+        border-radius: 15px;
+        font-weight: bold;
+
+    }
+
+    #item-6 {
         grid-column-start: 5;
         grid-column-end: 6;
         grid-row-start: 1;
@@ -73,10 +86,15 @@
         grid-row-end: 3;
     }
 
-    #item-2 
+    #item-2 {
 
-        span{
-        display: none;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+            span{
+            display: none;
+        }
     }
 
     #item-1 {
@@ -84,5 +102,6 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
+        margin-right: 0px;
     }
   }

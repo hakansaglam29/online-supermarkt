@@ -9,21 +9,23 @@ import { ReactComponent as Logo } from '../../assets/icons/market_logo.svg';
 import './header.styles.scss';
 import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
+import useWindowDimensions from '../../components/window-dimensions/window-dimensions.component';
 
 
 function Header() {
     const { hidden, showSidebar } = useContext(CartContext);
     const history = useHistory();
-    
+    const { width } = useWindowDimensions();
+
     return (
-        <>
+        <div className='navbar-wrapper'>
             <div className='navbar' >
                 <div className='menu'>
-                    <div 
+                    <div
                         className='logo' id='item-1'
                         onClick={() => history.push('/')}
                     >
-                        <Logo/>
+                        <Logo />
                     </div>
                     <div className='menu-bars' id='item-2'>
                         <Menu onClick={showSidebar} />
@@ -33,16 +35,21 @@ function Header() {
                         <SearchBar />
                     </div>
 
-                    <div id='item-4'>
-                        <Link to='#' className='register'>
-                            <span>Register</span>
-                        </Link>
-                        <span>|</span>
-                        <Link to='#' className='login'>
-                            <span>Login</span>
-                        </Link>
-                    </div>
-                    <div id='item-5'>
+                    {(width > 1060) ?
+                        <div id='item-4'>
+                            <Link to='#' className='register'>
+                                <span >Register</span>
+                            </Link>
+                            <span>|</span>
+                            <Link to='#' className='login'>
+                                <span>Login</span>
+                            </Link>
+                        </div>
+                        :
+                        <div id='item-5'>
+                            <p>H</p>
+                        </div>}
+                    <div id='item-6'>
                         <CardIcon />
                     </div>
                 </div>
@@ -51,7 +58,7 @@ function Header() {
             <div className='dropdown-wrapper'>
                 {hidden ? null : <CartDropdown />}
             </div>
-        </>
+        </div>
     )
 }
 export default Header;

@@ -7,9 +7,12 @@
     margin:auto;
     margin:10px 10px 20px 90px;
 }
-
 .search-container.active {
     margin:10px 10px 20px 260px;
+}
+
+.item-title {
+    margin-bottom: 10px;
 }
 
 .items-search {
@@ -17,4 +20,22 @@
     justify-content: left;
     align-items: stretch;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1060px) { 
+    .search-container {
+        margin:10px 10px 10px 70px;
+    }
+    .search-container.active {
+        margin:10px 10px 10px 70px;
+    }
+}
+
+@media only screen and (max-width: 425px) { 
+    .search-container {
+        margin:10px 10px 10px 60px;
+    }
+    .search-container.active {
+        margin:10px 10px 10px 60px;
+    }
 }

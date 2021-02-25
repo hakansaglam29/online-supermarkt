@@ -77,7 +77,7 @@ const ItemDetail = ({ match }) => {
                                 id="product-detail"
                                 name="product-detail"
                                 rows="4" cols="55"
-                                maxlength="500"
+                                maxlength="1000"
                                 placeholder="You can write the details you want to specify." />
                         </div>
                     </div>

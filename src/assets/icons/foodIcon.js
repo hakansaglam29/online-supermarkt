@@ -6,8 +6,8 @@ function SvgComponent(props) {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 640 640"
-      width={36}
-      height={36}
+      width={32}
+      height={32}
       {...props}
     >
       <defs>

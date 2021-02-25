@@ -5,10 +5,11 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top:55px;
+    top:63px;
     left: -10px;
     padding-right: 5px;
     z-index: 1;
+    flex-shrink: initial;
 }
 
 .nav-menu.active {
@@ -22,7 +23,7 @@
 
 @media only screen and (max-width: 1060px) {
     .nav-menu {
-        top:100px;
+        top:92px;
         width: 70px;
     }
     .nav-menu.active {

@@ -1,23 +1,29 @@
-import {useContext} from 'react';
-import {CartContext} from '../../providers/cart/cart.provider';
-import Search from '../../assets/icons/SearchIcon'
+import { useContext } from 'react';
+import { CartContext } from '../../providers/cart/cart.provider';
+import SearchIcon from '../../assets/icons/SearchIcon'
 import './search-bar.styles.scss';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import Search from '../../assets/icons/SearchIcon';
 
 function SearchBar() {
-    const {setInputData, inputData} = useContext(CartContext)
+    const { setInputData, inputData } = useContext(CartContext)
+    const history = useHistory();
 
     return (
         <div className='search'>
             <div className='inputWrapper'>
-                 <Search className='searchIcon'/>
-                 <Link className='button' to="/search" >Search</Link>
+                <SearchIcon className='searchIcon' />
+                <div
+                    className='button'
+                    onClick={() => history.push('/search')}
+                        > Search
+                    </div>
                  <input
                     placeholder='Search product...'
                     className='input'
                     value={inputData}
                     onChange={(event) => setInputData(event.target.value)}
-                />   
+                />
             </div>
         </div>
     )

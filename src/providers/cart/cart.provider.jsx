@@ -27,7 +27,7 @@ export const CartContext = createContext({
 const CartProvider = ({ children }) => {
     const { width } = useWindowDimensions();
     const [inputData, setInputData] = useState('')
-    const [sidebar, setSidebar] = useState((width<1025) ? false : true)
+    const [sidebar, setSidebar] = useState((width<1060) ? false : true)
     const [hidden, setHidden] = useState(true);
     const [cartItems, setCartItems] = useState([]);
     const [cartItemsCount, setCartItemsCount] = useState(0)

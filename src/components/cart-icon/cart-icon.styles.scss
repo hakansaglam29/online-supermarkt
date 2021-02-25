@@ -2,6 +2,12 @@
     min-width: 143px;
     margin-left: 20px;
     cursor: pointer;
+
+    @media only screen and (max-width: 1060px) {
+        margin-left: 5px;
+        margin-right: 5px;
+      } 
+
 }
 
 .dropdown {

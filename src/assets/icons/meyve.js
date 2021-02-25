@@ -2,8 +2,8 @@ const Meyve = (props) => {
   return (
     <svg
       viewBox="0 0 530 640"
-      width={36}
-      height={36}
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
